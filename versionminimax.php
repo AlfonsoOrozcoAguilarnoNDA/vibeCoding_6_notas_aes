@@ -568,7 +568,7 @@ $contenido_mostrar = $_SESSION['contenido_nota'] ?? '';
                         <h5 class="modal-title"><i class="fas fa-eye mr-2"></i>Leer Nota</h5>
                         <button type="button" class="close text-white" data-dismiss="modal"><span>&times;</span></button>
                     </div>
-                    <form method="POST" action="vault.php?accion=leer">
+                    <form method="POST" action="?accion=leer">
                         <div class="modal-body">
                             <input type="hidden" name="numero" id="leer_numero" value="">
                             <div class="form-group">
@@ -602,7 +602,7 @@ $contenido_mostrar = $_SESSION['contenido_nota'] ?? '';
                         <h5 class="modal-title"><i class="fas fa-save mr-2"></i>Guardar Nota</h5>
                         <button type="button" class="close text-white" data-dismiss="modal"><span>&times;</span></button>
                     </div>
-                    <form method="POST" action="vault.php?accion=guardar">
+                    <form method="POST" action="?accion=guardar">
                         <div class="modal-body">
                             <input type="hidden" name="numero" id="guardar_numero" value="">
                             <div class="form-group">
