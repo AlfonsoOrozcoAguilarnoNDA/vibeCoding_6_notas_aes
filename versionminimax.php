@@ -226,7 +226,7 @@ if ($accion === 'login' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 // Logout
 if ($accion === 'logout') {
     session_destroy();
-    header('Location: vault.php');
+    header('Location: versionminimax.php');
     exit;
 }
 
@@ -393,7 +393,7 @@ $contenido_mostrar = $_SESSION['contenido_nota'] ?? '';
 <!-- Navbar Fijo -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-        <a class="navbar-brand font-weight-bold" href="vault.php">
+        <a class="navbar-brand font-weight-bold" href="?">
             <i class="fas fa-vault mr-2"></i>Vault
         </a>
         <span class="navbar-text text-white">
@@ -420,7 +420,7 @@ $contenido_mostrar = $_SESSION['contenido_nota'] ?? '';
                 </li>
                 <?php if ($autenticado): ?>
                 <li class="nav-item">
-                    <a class="nav-link text-warning" href="vault.php?accion=logout">
+                    <a class="nav-link text-warning" href="?accion=logout">
                         <i class="fas fa-sign-out-alt mr-1"></i>Salir
                     </a>
                 </li>
@@ -453,7 +453,7 @@ $contenido_mostrar = $_SESSION['contenido_nota'] ?? '';
                 <h4 class="mb-0"><i class="fas fa-lock mr-2"></i>Acceso al Vault</h4>
             </div>
             <div class="card-body p-4">
-                <form method="POST" action="vault.php?accion=login">
+                <form method="POST" action="?accion=login">
                     <div class="form-group">
                         <label><i class="fas fa-user mr-2"></i>Usuario</label>
                         <input type="text" name="username" class="form-control" value="admin" required>
