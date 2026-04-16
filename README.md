@@ -11,6 +11,11 @@ Dejar seis notas cifradas para entornos hostiles.
 ## 1. Objetivo del Experimento
 Evaluar la capacidad de diversos modelos de lenguaje (LLM) para generar una aplicación de archivo único (Single-File App) de alta seguridad, utilizando **PHP 8.x**, **AES-256-CBC** y **Bootstrap 4.6**. El enfoque principal fue la fidelidad a los requisitos técnicos, la honestidad del modelo y la robustez ante fallos de entorno (permisos de escritura).
 
+Nota:
+As of April 16, 2026, GitHub is experiencing several service disruptions and reported issues, primarily affecting Copilot, Codespaces, and specific API integrations. 
+
+No se pudo hacer mucho de otras cosas  por problemas de Github. Por eso por lascosasserias uso GITEA.
+
 ## 2. El Desafío (The Prompt)
 Se solicitó un sistema de notas cifradas con:
 - Login mediante `password_verify` con el hash de la palabra `vibekoder`.
