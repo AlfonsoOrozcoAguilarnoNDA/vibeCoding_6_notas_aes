@@ -4,6 +4,7 @@ Dejar seis notas cifradas para entornos hostiles.
 **Metodología:** Vibecoding Laboratory  
 **Auditor:** Alfonso Orozco Aguilar (Senior Programmer & DevOps Architect)  
 **Fecha:** Abril 2026
+
 **info del experimento:** https://vibecodingmexico.com/vault-aes-de-seis-archivos/
 
 
