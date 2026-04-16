@@ -3,6 +3,7 @@ Dejar seis notas cifradas para entornos hostiles.
 # Auditoría de Resiliencia y Lógica: Proyecto Vault PHP 8.x
 **Metodología:** Vibecoding Laboratory  
 **Auditor:** Alfonso Orozco Aguilar (Senior Programmer & DevOps Architect)  
+info del experimento : https://vibecodingmexico.com/vault-aes-de-seis-archivos/
 **Fecha:** Abril 2026  
 
 ## 1. Objetivo del Experimento
