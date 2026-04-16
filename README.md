@@ -23,6 +23,55 @@ Se solicitó un sistema de notas cifradas con:
 - Interfaz profesional con 6 cards para archivos `.aes`.
 - Manejo de excepciones en el sistema de archivos.
 
+Prompt Sugerido para la IA
+Rol: Actúa como un Senior Full-Stack Developer experto en PHP y Seguridad.
+
+Objetivo: Crear una Single-File Web App (un solo archivo PHP) que funcione como un “Vault” de notas de texto cifradas.
+
+Requisitos Técnicos:
+
+Frontend: Php 8.x Bootstrap 4.6.x (CDN), Font Awesome 5.15.4, y jQuery (para los modales).
+
+Seguridad: Uso de la extensión openssl de PHP para cifrado AES-256-CBC.
+
+Funcionalidad y Flujo:
+
+Login Inicial: Pantalla de inicio centrada que pida usuario admin y contraseña. El acceso se permite si el hash de la contraseña coincide con el de la palabra “vibekoder”.
+
+
+ Para el login, usa password_verify contra un hash pre-generado de ‘vibekoder’ para evitar guardar la palabra en texto plano dentro del código. Para el AES, asegúrate de concatenar el IV al inicio del archivo guardado para poder recuperarlo al descifrar.“
+Interfaz Principal:
+
+Navbar fija con 3 opciones de menú, un enlace externo y un botón de “Salir” (cerrar sesión). Tambien un footer, ambos fijos.
+
+Un Jumbotron de bienvenida.
+
+Identificarte como modelo en la barra superior de navegacion, y poner ip y version de php en el footer.
+Grid de 6 tarjetas (Cards) que representen los archivos nota1.aes hasta nota6.aes.
+
+Gestión de Archivos:
+
+Al cargar, debe verificar si los archivos existen y si el directorio tiene permisos de escritura. Si no existen, crearlos vacíos (máx 4096 bytes).
+
+Cada nota se muestra inicialmente como texto cifrado (o un placeholder).
+
+Acciones por Nota:
+
+Botón “Leer/Editar”: Abre un Modal que pide una “Clave de Cifrado” (diferente a la de login). Al ingresarla, descifra el contenido del archivo .aes correspondiente y lo muestra en un textarea.
+
+Botón “Grabar”: Cifra el contenido del textarea con la clave proporcionada y lo guarda en el disco.
+
+Botón “Copiar”: Botón rápido para copiar el texto descifrado al portapapeles.
+
+Restricciones de Código:
+
+Todo debe estar contenido en un único archivo PHP 8.x.
+
+Manejar el cifrado con una función que incluya un IV (Initialization Vector) para seguridad real.
+
+Diseño limpio y profesional (Vibecoding style).
+
+FIN DE PROMPT
 ## 3. Matriz de Resultados y Hallazgos
 
 | Modelo | Acceso (Hash) | Honestidad | UI/UX | Observaciones Técnicas |
