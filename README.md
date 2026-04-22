@@ -28,19 +28,19 @@ Rol: Actúa como un Senior Full-Stack Developer experto en PHP y Seguridad.
 
 Objetivo: Crear una Single-File Web App (un solo archivo PHP) que funcione como un “Vault” de notas de texto cifradas.
 
-Requisitos Técnicos:
+## Requisitos Técnicos:
 
 Frontend: Php 8.x Bootstrap 4.6.x (CDN), Font Awesome 5.15.4, y jQuery (para los modales).
 
 Seguridad: Uso de la extensión openssl de PHP para cifrado AES-256-CBC.
 
-Funcionalidad y Flujo:
+## Funcionalidad y Flujo:
 
 Login Inicial: Pantalla de inicio centrada que pida usuario admin y contraseña. El acceso se permite si el hash de la contraseña coincide con el de la palabra “vibekoder”.
 
+Para el login, usa password_verify contra un hash pre-generado de ‘vibekoder’ para evitar guardar la palabra en texto plano dentro del código. Para el AES, asegúrate de concatenar el IV al inicio del archivo guardado para poder recuperarlo al descifrar.“
 
- Para el login, usa password_verify contra un hash pre-generado de ‘vibekoder’ para evitar guardar la palabra en texto plano dentro del código. Para el AES, asegúrate de concatenar el IV al inicio del archivo guardado para poder recuperarlo al descifrar.“
-Interfaz Principal:
+## Interfaz Principal:
 
 Navbar fija con 3 opciones de menú, un enlace externo y un botón de “Salir” (cerrar sesión). Tambien un footer, ambos fijos.
 
@@ -63,7 +63,7 @@ Botón “Grabar”: Cifra el contenido del textarea con la clave proporcionada 
 
 Botón “Copiar”: Botón rápido para copiar el texto descifrado al portapapeles.
 
-Restricciones de Código:
+## Restricciones de Código:
 
 Todo debe estar contenido en un único archivo PHP 8.x.
 
